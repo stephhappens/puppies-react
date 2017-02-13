@@ -1,5 +1,20 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
+$c-primary: hsl(217, 71%, 53%);
+
+@import 'app.css'
+@import 'bulma';
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+@import 'box-sizing';
+
+
+  .nav {
+    background: $c-primary;
+
+  .nav-item a, a.nav-item {
+    color: $white-bis;
+
+    &.is-brand {
+      font-size: 1.2rem;
+      font-weight: normal;
+    }
+  }
+  }
