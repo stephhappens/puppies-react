@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import {Router, Route, Link} from 'react-router';
+
 
 class Puppies extends Component {
     componentWillMount() {}
@@ -20,7 +22,7 @@ class Puppies extends Component {
                                 <tr>
                                     <td>{puppy.name}</td>
                                     <td>{puppy.age}</td>
-                                    <td>Read more</td>
+                                    <td><Link to="/puppies-detail"> Read more. </Link></td>
                                 </tr>
                             ))}
                         </tbody>

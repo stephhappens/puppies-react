@@ -1,9 +1,20 @@
 import React, {Component} from 'react';
 import {Router, Route, Link} from 'react-router';
 import PuppiesIndex from './components/puppies-index';
+import PuppiesDetail from './components/puppies-detail';
 import './index.css';
 
 const apiUrl = 'https://tiy-tn-class-api-fall-16.herokuapp.com/puppies/stephanie';
+
+// const routes = {
+//   path: '/',
+//   component: App,
+//   indexRoute: {component: App},
+//   childRoutes: [
+//     {path: 'puppies', component: Puppies },
+//     {path: 'puppies-detail', component: PuppiesDetail }
+//   ]
+// }
 
 class App extends Component {
     componentWillMount() {
@@ -48,7 +59,7 @@ class App extends Component {
                                             </div>
                                             <div className="media-right">
                                                 <h2>{puppy.name}</h2>
-                                                <h3>Read more.</h3>
+                                                <a href="#"><h3>Read more.</h3></a>
                                             </div>
                                         </div>
                                     </div>
@@ -61,10 +72,21 @@ class App extends Component {
                     </div>
                 </div>
             </div>
-        //  </div>
 
         );
     }
 }
+// render((
+//   <Router>
+//     <Route path="/" component={app}>
+//       <Route path="puppies" component={puppies-index}>
+//         <Route path="puppies-detail" component={puppies-detail}>
+//         </Route>
+//     </Route>
+//   </Route>
+// </Router>
+//
+//
+// ), document.body)
 
 export default App;
