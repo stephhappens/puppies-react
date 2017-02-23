@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {Router, Route, Link} from 'react-router';
-import PuppiesIndex from './components/puppies-index';
-import './index.css';
+import PuppiesIndex from './puppies-index';
 
 const apiUrl = 'https://tiy-tn-class-api-fall-16.herokuapp.com/puppies/stephanie';
 
@@ -13,7 +12,9 @@ class PuppiesDetail extends Component {
       });
   }
     render() {
-      <div className= "">
+      const puppy = this.state.puppy;
+
+      return (<div className= "">
     <div className="card is-fullwidth">
         <div className="card-image">
             <figure className="image is-4by3">
@@ -38,7 +39,7 @@ class PuppiesDetail extends Component {
             <button className="card-footer-item button is-primary">Delete Puppy</button>
         </footer>
     </div>
-  </div>
+  </div>)
 };
 }
 export default PuppiesDetail;

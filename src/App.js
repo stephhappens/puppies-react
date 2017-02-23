@@ -76,17 +76,5 @@ class App extends Component {
         );
     }
 }
-// render((
-//   <Router>
-//     <Route path="/" component={app}>
-//       <Route path="puppies" component={puppies-index}>
-//         <Route path="puppies-detail" component={puppies-detail}>
-//         </Route>
-//     </Route>
-//   </Route>
-// </Router>
-//
-//
-// ), document.body)
 
 export default App;
